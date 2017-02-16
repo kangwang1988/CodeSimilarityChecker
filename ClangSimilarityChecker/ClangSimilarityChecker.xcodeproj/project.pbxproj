@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29BD61C31E55467500499ED8 /* CodeSimilarityChecker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61871E55467500499ED8 /* CodeSimilarityChecker.cpp */; };
+		29BD61C41E55467500499ED8 /* CodeSimilarityCheckerUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61891E55467500499ED8 /* CodeSimilarityCheckerUtil.cpp */; };
+		29BD61C51E55467500499ED8 /* NKASTTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29BD618B1E55467500499ED8 /* NKASTTree.cpp */; };
+		29BD61C61E55467500499ED8 /* NoUsedClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD618E1E55467500499ED8 /* NoUsedClass.m */; };
+		29BD61C71E55467500499ED8 /* NSString+RemoveEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61951E55467500499ED8 /* NSString+RemoveEmoji.m */; };
+		29BD61C81E55467500499ED8 /* XCKeyBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61971E55467500499ED8 /* XCKeyBuilder.m */; };
+		29BD61C91E55467500499ED8 /* XCAbstractDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61991E55467500499ED8 /* XCAbstractDefinition.m */; };
+		29BD61CA1E55467500499ED8 /* XCBuildShellScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD619C1E55467500499ED8 /* XCBuildShellScript.m */; };
+		29BD61CB1E55467500499ED8 /* XCBuildShellScriptDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD619E1E55467500499ED8 /* XCBuildShellScriptDefinition.m */; };
+		29BD61CC1E55467500499ED8 /* XCClassDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61A01E55467500499ED8 /* XCClassDefinition.m */; };
+		29BD61CD1E55467500499ED8 /* XCFileOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61A21E55467500499ED8 /* XCFileOperationQueue.m */; };
+		29BD61CE1E55467500499ED8 /* XCFrameworkDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61A41E55467500499ED8 /* XCFrameworkDefinition.m */; };
+		29BD61CF1E55467500499ED8 /* XCGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61A61E55467500499ED8 /* XCGroup.m */; };
+		29BD61D01E55467500499ED8 /* XcodeMemberType.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61AA1E55467500499ED8 /* XcodeMemberType.m */; };
+		29BD61D11E55467500499ED8 /* XcodeSourceFileType.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61AC1E55467500499ED8 /* XcodeSourceFileType.m */; };
+		29BD61D21E55467500499ED8 /* XcodeSourceTreeType.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61AE1E55467500499ED8 /* XcodeSourceTreeType.m */; };
+		29BD61D31E55467500499ED8 /* XCProject+SubProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61B01E55467500499ED8 /* XCProject+SubProject.m */; };
+		29BD61D41E55467500499ED8 /* XCProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61B21E55467500499ED8 /* XCProject.m */; };
+		29BD61D51E55467500499ED8 /* XCProjectBuildConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61B41E55467500499ED8 /* XCProjectBuildConfig.m */; };
+		29BD61D61E55467500499ED8 /* XCSourceFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61B61E55467500499ED8 /* XCSourceFile.m */; };
+		29BD61D71E55467500499ED8 /* XCSourceFileDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61B81E55467500499ED8 /* XCSourceFileDefinition.m */; };
+		29BD61D81E55467500499ED8 /* XCSubProjectDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61BA1E55467500499ED8 /* XCSubProjectDefinition.m */; };
+		29BD61D91E55467500499ED8 /* XCTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61BC1E55467500499ED8 /* XCTarget.m */; };
+		29BD61DA1E55467500499ED8 /* XCVersionGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61BE1E55467500499ED8 /* XCVersionGroup.m */; };
+		29BD61DB1E55467500499ED8 /* XCXibDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61C01E55467500499ED8 /* XCXibDefinition.m */; };
+		29BD61DC1E55467500499ED8 /* XcodeEditorCPPWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61C21E55467500499ED8 /* XcodeEditorCPPWrapper.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		29BD61681E55460000499ED8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		29BD616A1E55460000499ED8 /* ClangSimilarityChecker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ClangSimilarityChecker; sourceTree = BUILT_PRODUCTS_DIR; };
+		29BD61871E55467500499ED8 /* CodeSimilarityChecker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CodeSimilarityChecker.cpp; sourceTree = "<group>"; };
+		29BD61881E55467500499ED8 /* CodeSimilarityChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeSimilarityChecker.h; sourceTree = "<group>"; };
+		29BD61891E55467500499ED8 /* CodeSimilarityCheckerUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CodeSimilarityCheckerUtil.cpp; sourceTree = "<group>"; };
+		29BD618A1E55467500499ED8 /* CodeSimilarityCheckerUtil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CodeSimilarityCheckerUtil.hpp; sourceTree = "<group>"; };
+		29BD618B1E55467500499ED8 /* NKASTTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NKASTTree.cpp; sourceTree = "<group>"; };
+		29BD618C1E55467500499ED8 /* NKASTTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NKASTTree.hpp; sourceTree = "<group>"; };
+		29BD618D1E55467500499ED8 /* NoUsedClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoUsedClass.h; sourceTree = "<group>"; };
+		29BD618E1E55467500499ED8 /* NoUsedClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoUsedClass.m; sourceTree = "<group>"; };
+		29BD61941E55467500499ED8 /* NSString+RemoveEmoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RemoveEmoji.h"; sourceTree = "<group>"; };
+		29BD61951E55467500499ED8 /* NSString+RemoveEmoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RemoveEmoji.m"; sourceTree = "<group>"; };
+		29BD61961E55467500499ED8 /* XCKeyBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCKeyBuilder.h; sourceTree = "<group>"; };
+		29BD61971E55467500499ED8 /* XCKeyBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCKeyBuilder.m; sourceTree = "<group>"; };
+		29BD61981E55467500499ED8 /* XCAbstractDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCAbstractDefinition.h; sourceTree = "<group>"; };
+		29BD61991E55467500499ED8 /* XCAbstractDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCAbstractDefinition.m; sourceTree = "<group>"; };
+		29BD619A1E55467500499ED8 /* XCBuildFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCBuildFile.h; sourceTree = "<group>"; };
+		29BD619B1E55467500499ED8 /* XCBuildShellScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCBuildShellScript.h; sourceTree = "<group>"; };
+		29BD619C1E55467500499ED8 /* XCBuildShellScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCBuildShellScript.m; sourceTree = "<group>"; };
+		29BD619D1E55467500499ED8 /* XCBuildShellScriptDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCBuildShellScriptDefinition.h; sourceTree = "<group>"; };
+		29BD619E1E55467500499ED8 /* XCBuildShellScriptDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCBuildShellScriptDefinition.m; sourceTree = "<group>"; };
+		29BD619F1E55467500499ED8 /* XCClassDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCClassDefinition.h; sourceTree = "<group>"; };
+		29BD61A01E55467500499ED8 /* XCClassDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCClassDefinition.m; sourceTree = "<group>"; };
+		29BD61A11E55467500499ED8 /* XCFileOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFileOperationQueue.h; sourceTree = "<group>"; };
+		29BD61A21E55467500499ED8 /* XCFileOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFileOperationQueue.m; sourceTree = "<group>"; };
+		29BD61A31E55467500499ED8 /* XCFrameworkDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFrameworkDefinition.h; sourceTree = "<group>"; };
+		29BD61A41E55467500499ED8 /* XCFrameworkDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFrameworkDefinition.m; sourceTree = "<group>"; };
+		29BD61A51E55467500499ED8 /* XCGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCGroup.h; sourceTree = "<group>"; };
+		29BD61A61E55467500499ED8 /* XCGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCGroup.m; sourceTree = "<group>"; };
+		29BD61A71E55467500499ED8 /* XcodeEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeEditor.h; sourceTree = "<group>"; };
+		29BD61A81E55467500499ED8 /* XcodeGroupMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeGroupMember.h; sourceTree = "<group>"; };
+		29BD61A91E55467500499ED8 /* XcodeMemberType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeMemberType.h; sourceTree = "<group>"; };
+		29BD61AA1E55467500499ED8 /* XcodeMemberType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeMemberType.m; sourceTree = "<group>"; };
+		29BD61AB1E55467500499ED8 /* XcodeSourceFileType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeSourceFileType.h; sourceTree = "<group>"; };
+		29BD61AC1E55467500499ED8 /* XcodeSourceFileType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeSourceFileType.m; sourceTree = "<group>"; };
+		29BD61AD1E55467500499ED8 /* XcodeSourceTreeType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeSourceTreeType.h; sourceTree = "<group>"; };
+		29BD61AE1E55467500499ED8 /* XcodeSourceTreeType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeSourceTreeType.m; sourceTree = "<group>"; };
+		29BD61AF1E55467500499ED8 /* XCProject+SubProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCProject+SubProject.h"; sourceTree = "<group>"; };
+		29BD61B01E55467500499ED8 /* XCProject+SubProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCProject+SubProject.m"; sourceTree = "<group>"; };
+		29BD61B11E55467500499ED8 /* XCProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCProject.h; sourceTree = "<group>"; };
+		29BD61B21E55467500499ED8 /* XCProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCProject.m; sourceTree = "<group>"; };
+		29BD61B31E55467500499ED8 /* XCProjectBuildConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCProjectBuildConfig.h; sourceTree = "<group>"; };
+		29BD61B41E55467500499ED8 /* XCProjectBuildConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCProjectBuildConfig.m; sourceTree = "<group>"; };
+		29BD61B51E55467500499ED8 /* XCSourceFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCSourceFile.h; sourceTree = "<group>"; };
+		29BD61B61E55467500499ED8 /* XCSourceFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCSourceFile.m; sourceTree = "<group>"; };
+		29BD61B71E55467500499ED8 /* XCSourceFileDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCSourceFileDefinition.h; sourceTree = "<group>"; };
+		29BD61B81E55467500499ED8 /* XCSourceFileDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCSourceFileDefinition.m; sourceTree = "<group>"; };
+		29BD61B91E55467500499ED8 /* XCSubProjectDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCSubProjectDefinition.h; sourceTree = "<group>"; };
+		29BD61BA1E55467500499ED8 /* XCSubProjectDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCSubProjectDefinition.m; sourceTree = "<group>"; };
+		29BD61BB1E55467500499ED8 /* XCTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTarget.h; sourceTree = "<group>"; };
+		29BD61BC1E55467500499ED8 /* XCTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTarget.m; sourceTree = "<group>"; };
+		29BD61BD1E55467500499ED8 /* XCVersionGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCVersionGroup.h; sourceTree = "<group>"; };
+		29BD61BE1E55467500499ED8 /* XCVersionGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCVersionGroup.m; sourceTree = "<group>"; };
+		29BD61BF1E55467500499ED8 /* XCXibDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCXibDefinition.h; sourceTree = "<group>"; };
+		29BD61C01E55467500499ED8 /* XCXibDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCXibDefinition.m; sourceTree = "<group>"; };
+		29BD61C11E55467500499ED8 /* XcodeEditorCPPWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeEditorCPPWrapper.h; sourceTree = "<group>"; };
+		29BD61C21E55467500499ED8 /* XcodeEditorCPPWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XcodeEditorCPPWrapper.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29BD61671E55460000499ED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29BD61611E55460000499ED8 = {
+			isa = PBXGroup;
+			children = (
+				29BD616C1E55460000499ED8 /* ClangSimilarityChecker */,
+				29BD616B1E55460000499ED8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		29BD616B1E55460000499ED8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29BD616A1E55460000499ED8 /* ClangSimilarityChecker */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29BD616C1E55460000499ED8 /* ClangSimilarityChecker */ = {
+			isa = PBXGroup;
+			children = (
+				29BD61871E55467500499ED8 /* CodeSimilarityChecker.cpp */,
+				29BD61881E55467500499ED8 /* CodeSimilarityChecker.h */,
+				29BD61891E55467500499ED8 /* CodeSimilarityCheckerUtil.cpp */,
+				29BD618A1E55467500499ED8 /* CodeSimilarityCheckerUtil.hpp */,
+				29BD618B1E55467500499ED8 /* NKASTTree.cpp */,
+				29BD618C1E55467500499ED8 /* NKASTTree.hpp */,
+				29BD618D1E55467500499ED8 /* NoUsedClass.h */,
+				29BD618E1E55467500499ED8 /* NoUsedClass.m */,
+				29BD618F1E55467500499ED8 /* Vendor */,
+				29BD61C11E55467500499ED8 /* XcodeEditorCPPWrapper.h */,
+				29BD61C21E55467500499ED8 /* XcodeEditorCPPWrapper.mm */,
+			);
+			path = ClangSimilarityChecker;
+			sourceTree = "<group>";
+		};
+		29BD618F1E55467500499ED8 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				29BD61901E55467500499ED8 /* XcodeEditor */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		29BD61901E55467500499ED8 /* XcodeEditor */ = {
+			isa = PBXGroup;
+			children = (
+				29BD61911E55467500499ED8 /* Resources */,
+				29BD61921E55467500499ED8 /* Tests */,
+				29BD61931E55467500499ED8 /* Utils */,
+				29BD61981E55467500499ED8 /* XCAbstractDefinition.h */,
+				29BD61991E55467500499ED8 /* XCAbstractDefinition.m */,
+				29BD619A1E55467500499ED8 /* XCBuildFile.h */,
+				29BD619B1E55467500499ED8 /* XCBuildShellScript.h */,
+				29BD619C1E55467500499ED8 /* XCBuildShellScript.m */,
+				29BD619D1E55467500499ED8 /* XCBuildShellScriptDefinition.h */,
+				29BD619E1E55467500499ED8 /* XCBuildShellScriptDefinition.m */,
+				29BD619F1E55467500499ED8 /* XCClassDefinition.h */,
+				29BD61A01E55467500499ED8 /* XCClassDefinition.m */,
+				29BD61A11E55467500499ED8 /* XCFileOperationQueue.h */,
+				29BD61A21E55467500499ED8 /* XCFileOperationQueue.m */,
+				29BD61A31E55467500499ED8 /* XCFrameworkDefinition.h */,
+				29BD61A41E55467500499ED8 /* XCFrameworkDefinition.m */,
+				29BD61A51E55467500499ED8 /* XCGroup.h */,
+				29BD61A61E55467500499ED8 /* XCGroup.m */,
+				29BD61A71E55467500499ED8 /* XcodeEditor.h */,
+				29BD61A81E55467500499ED8 /* XcodeGroupMember.h */,
+				29BD61A91E55467500499ED8 /* XcodeMemberType.h */,
+				29BD61AA1E55467500499ED8 /* XcodeMemberType.m */,
+				29BD61AB1E55467500499ED8 /* XcodeSourceFileType.h */,
+				29BD61AC1E55467500499ED8 /* XcodeSourceFileType.m */,
+				29BD61AD1E55467500499ED8 /* XcodeSourceTreeType.h */,
+				29BD61AE1E55467500499ED8 /* XcodeSourceTreeType.m */,
+				29BD61AF1E55467500499ED8 /* XCProject+SubProject.h */,
+				29BD61B01E55467500499ED8 /* XCProject+SubProject.m */,
+				29BD61B11E55467500499ED8 /* XCProject.h */,
+				29BD61B21E55467500499ED8 /* XCProject.m */,
+				29BD61B31E55467500499ED8 /* XCProjectBuildConfig.h */,
+				29BD61B41E55467500499ED8 /* XCProjectBuildConfig.m */,
+				29BD61B51E55467500499ED8 /* XCSourceFile.h */,
+				29BD61B61E55467500499ED8 /* XCSourceFile.m */,
+				29BD61B71E55467500499ED8 /* XCSourceFileDefinition.h */,
+				29BD61B81E55467500499ED8 /* XCSourceFileDefinition.m */,
+				29BD61B91E55467500499ED8 /* XCSubProjectDefinition.h */,
+				29BD61BA1E55467500499ED8 /* XCSubProjectDefinition.m */,
+				29BD61BB1E55467500499ED8 /* XCTarget.h */,
+				29BD61BC1E55467500499ED8 /* XCTarget.m */,
+				29BD61BD1E55467500499ED8 /* XCVersionGroup.h */,
+				29BD61BE1E55467500499ED8 /* XCVersionGroup.m */,
+				29BD61BF1E55467500499ED8 /* XCXibDefinition.h */,
+				29BD61C01E55467500499ED8 /* XCXibDefinition.m */,
+			);
+			path = XcodeEditor;
+			sourceTree = "<group>";
+		};
+		29BD61911E55467500499ED8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		29BD61921E55467500499ED8 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		29BD61931E55467500499ED8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				29BD61941E55467500499ED8 /* NSString+RemoveEmoji.h */,
+				29BD61951E55467500499ED8 /* NSString+RemoveEmoji.m */,
+				29BD61961E55467500499ED8 /* XCKeyBuilder.h */,
+				29BD61971E55467500499ED8 /* XCKeyBuilder.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29BD61691E55460000499ED8 /* ClangSimilarityChecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29BD61711E55460000499ED8 /* Build configuration list for PBXNativeTarget "ClangSimilarityChecker" */;
+			buildPhases = (
+				29BD61661E55460000499ED8 /* Sources */,
+				29BD61671E55460000499ED8 /* Frameworks */,
+				29BD61681E55460000499ED8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClangSimilarityChecker;
+			productName = ClangSimilarityChecker;
+			productReference = 29BD616A1E55460000499ED8 /* ClangSimilarityChecker */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29BD61621E55460000499ED8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = KyleWong;
+				TargetAttributes = {
+					29BD61691E55460000499ED8 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = VP3AM7E5ZL;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 29BD61651E55460000499ED8 /* Build configuration list for PBXProject "ClangSimilarityChecker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29BD61611E55460000499ED8;
+			productRefGroup = 29BD616B1E55460000499ED8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29BD61691E55460000499ED8 /* ClangSimilarityChecker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29BD61661E55460000499ED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29BD61CC1E55467500499ED8 /* XCClassDefinition.m in Sources */,
+				29BD61C81E55467500499ED8 /* XCKeyBuilder.m in Sources */,
+				29BD61D71E55467500499ED8 /* XCSourceFileDefinition.m in Sources */,
+				29BD61C61E55467500499ED8 /* NoUsedClass.m in Sources */,
+				29BD61CD1E55467500499ED8 /* XCFileOperationQueue.m in Sources */,
+				29BD61D31E55467500499ED8 /* XCProject+SubProject.m in Sources */,
+				29BD61DC1E55467500499ED8 /* XcodeEditorCPPWrapper.mm in Sources */,
+				29BD61D51E55467500499ED8 /* XCProjectBuildConfig.m in Sources */,
+				29BD61CE1E55467500499ED8 /* XCFrameworkDefinition.m in Sources */,
+				29BD61D01E55467500499ED8 /* XcodeMemberType.m in Sources */,
+				29BD61D21E55467500499ED8 /* XcodeSourceTreeType.m in Sources */,
+				29BD61D91E55467500499ED8 /* XCTarget.m in Sources */,
+				29BD61D41E55467500499ED8 /* XCProject.m in Sources */,
+				29BD61C31E55467500499ED8 /* CodeSimilarityChecker.cpp in Sources */,
+				29BD61C91E55467500499ED8 /* XCAbstractDefinition.m in Sources */,
+				29BD61D11E55467500499ED8 /* XcodeSourceFileType.m in Sources */,
+				29BD61D61E55467500499ED8 /* XCSourceFile.m in Sources */,
+				29BD61C41E55467500499ED8 /* CodeSimilarityCheckerUtil.cpp in Sources */,
+				29BD61DA1E55467500499ED8 /* XCVersionGroup.m in Sources */,
+				29BD61C51E55467500499ED8 /* NKASTTree.cpp in Sources */,
+				29BD61CF1E55467500499ED8 /* XCGroup.m in Sources */,
+				29BD61C71E55467500499ED8 /* NSString+RemoveEmoji.m in Sources */,
+				29BD61CA1E55467500499ED8 /* XCBuildShellScript.m in Sources */,
+				29BD61D81E55467500499ED8 /* XCSubProjectDefinition.m in Sources */,
+				29BD61DB1E55467500499ED8 /* XCXibDefinition.m in Sources */,
+				29BD61CB1E55467500499ED8 /* XCBuildShellScriptDefinition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		29BD616F1E55460000499ED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		29BD61701E55460000499ED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		29BD61721E55460000499ED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VP3AM7E5ZL;
+				HEADER_SEARCH_PATHS = (
+					/opt/llvm/llvm/include,
+					/opt/llvm/llvm/tools/clang/include,
+					/opt/llvm/llvm_build/include,
+					/opt/llvm/llvm_build/tools/clang/include/,
+				);
+				LIBRARY_SEARCH_PATHS = /opt/llvm/llvm_build/lib;
+				OTHER_LDFLAGS = (
+					"-lLLVMSupport",
+					"-lclangAST",
+					"-lLLVMCore",
+					"-lLLVMMCParser",
+					"-lLLVMMC",
+					"-lclangRewrite",
+					"-lLLVMBitReader",
+					"-lLLVMProfileData",
+					"-lLLVMOption",
+					"-lclangBasic",
+					"-lclangFrontend",
+					"-lclangLex",
+					"-lclangSerialization",
+					"-lclangSema",
+					"-lclangAnalysis",
+					"-lclangEdit",
+					"-lclangDriver",
+					"-lclangTooling",
+					"-lclangParse",
+					"-lz",
+					"-lncurses",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		29BD61731E55460000499ED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VP3AM7E5ZL;
+				HEADER_SEARCH_PATHS = (
+					/opt/llvm/llvm/include,
+					/opt/llvm/llvm/tools/clang/include,
+					/opt/llvm/llvm_build/include,
+					/opt/llvm/llvm_build/tools/clang/include/,
+				);
+				LIBRARY_SEARCH_PATHS = /opt/llvm/llvm_build/lib;
+				OTHER_LDFLAGS = (
+					"-lLLVMSupport",
+					"-lclangAST",
+					"-lLLVMCore",
+					"-lLLVMMCParser",
+					"-lLLVMMC",
+					"-lclangRewrite",
+					"-lLLVMBitReader",
+					"-lLLVMProfileData",
+					"-lLLVMOption",
+					"-lclangBasic",
+					"-lclangFrontend",
+					"-lclangLex",
+					"-lclangSerialization",
+					"-lclangSema",
+					"-lclangAnalysis",
+					"-lclangEdit",
+					"-lclangDriver",
+					"-lclangTooling",
+					"-lclangParse",
+					"-lz",
+					"-lncurses",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29BD61651E55460000499ED8 /* Build configuration list for PBXProject "ClangSimilarityChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29BD616F1E55460000499ED8 /* Debug */,
+				29BD61701E55460000499ED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29BD61711E55460000499ED8 /* Build configuration list for PBXNativeTarget "ClangSimilarityChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29BD61721E55460000499ED8 /* Debug */,
+				29BD61731E55460000499ED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29BD61621E55460000499ED8 /* Project object */;
+}
