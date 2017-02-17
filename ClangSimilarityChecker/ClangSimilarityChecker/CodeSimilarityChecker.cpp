@@ -1,9 +1,6 @@
-#include<regex>
-#include <string>
-#include <fstream>
-
 #include "CodeSimilarityChecker.h"
 #include "CodeSimilarityCheckerUtil.hpp"
+#include "NKASTTree.hpp"
 
 using namespace std;
 extern vector<string> getSourcesByProject(string prjPath);
@@ -34,6 +31,16 @@ namespace CodeSimilarityChecker
         if(filename.find(gSrcRootPath)==string::npos)
             return true;
         void *parentNode = getParentNode<Decl>(decl);
+        if(isa<ObjCMethodDecl>(decl)){
+            ObjCMethodDecl *methodDecl = (ObjCMethodDecl *)(decl);
+            if(!methodDecl->hasBody())
+                return true;
+        }
+        if(isa<FunctionDecl>(decl)){
+            FunctionDecl *funcDecl = (FunctionDecl *)(decl);
+            if(!funcDecl->hasBody())
+                return true;
+        }
         this->astTree->insertValueWithParent(decl,parentNode);
         return true;
     }
@@ -51,7 +58,6 @@ namespace CodeSimilarityChecker
         string filename = context->getSourceManager().getFilename(s->getSourceRange().getBegin()).str();
         if(filename.find(gSrcRootPath)==string::npos)
             return true;
-//        string str(context->getSourceManager().getCharacterData(s->getSourceRange().getBegin()),s->getSourceRange().getEnd().getRawEncoding()-s->getSourceRange().getBegin().getRawEncoding()+1);
         void *parentNode = getParentNode<Stmt>(s);
         this->astTree->insertValueWithParent(s,parentNode);
         return true;
@@ -97,7 +103,7 @@ int main(int argc, const char **argv) {
         string content((istreambuf_iterator<char>(ifs)),(istreambuf_iterator<char>()    ) );
         vector<string> lineVec = split(content,'\n');
         
-        regex prjRegex("^[\\s]+location = \"group:[\\w\/]+[\\.]xcodeproj\">$");
+        regex prjRegex("^[\\s]+location = \"group:[\\w\\/]+[\\.]xcodeproj\">$");
         for(string line : lineVec){
             smatch sm;
             regex_match(line,sm,prjRegex);
@@ -143,10 +149,33 @@ int main(int argc, const char **argv) {
         astTreeVec.push_back(treeNode);
         visitor.TraverseDecl(tud);
     }
+    vector<NKASTTree *> methodVec;
+    vector<NKASTTree *> funcVec;
     for(NKASTTree *treeNode : astTreeVec){
+        treeNode->filterASTTreesOfType<ObjCMethodDecl,Decl>(methodVec);
+        treeNode->filterASTTreesOfType<FunctionDecl,Decl>(funcVec);
+    }
+    //Methods
+    for(NKASTTree *treeNode : methodVec){
+        map<int,map<string,string>> varScopeMap;
+        treeNode->setDepth(0);
+        treeNode->setPUniformedVarMap(&varScopeMap);
+        treeNode->dump();
         treeNode->optimize();
-        treeNode->uniformNames();
-        treeNode->dumpWithDepth(0);
+        treeNode->uniform();
+        hash<string> strHash;
+        cout<<strHash(treeNode->fingerprint())<<endl<<endl;
+    }
+    //Functions
+    for(NKASTTree *treeNode : funcVec){
+        map<int,map<string,string>> varScopeMap;
+        treeNode->setDepth(0);
+        treeNode->setPUniformedVarMap(&varScopeMap);
+        treeNode->dump();
+        treeNode->optimize();
+        treeNode->uniform();
+        hash<string> strHash;
+        cout<<strHash(treeNode->fingerprint())<<endl<<endl;
     }
     //Lib
     return result;

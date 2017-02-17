@@ -7,6 +7,7 @@
 
 @implementation ArithOperation
 - (NSInteger)mixOperation1:(NSInteger)n{
+    NSLog(@"ABC");
     NSInteger i = 1,j = 2;
     float m = 3.f;
     NSInteger r = (i+j)*m;
@@ -17,6 +18,7 @@
 }
 
 - (NSInteger)mixOperation2:(NSInteger)n2{
+    NSLog(@"ABC");
     NSInteger i2 = 1;
     NSInteger j2 = 2;
     float m2 = 3.f;
@@ -28,7 +30,7 @@
 }
 @end
 
-int main() {
+int main(int argc,char **argv) {
     ArithOperation* operation = [ArithOperation new];
     [operation mixOperation1];
     [operation mixOperation2];

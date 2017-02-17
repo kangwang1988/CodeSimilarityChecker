@@ -10,7 +10,6 @@
 		29BD61C31E55467500499ED8 /* CodeSimilarityChecker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61871E55467500499ED8 /* CodeSimilarityChecker.cpp */; };
 		29BD61C41E55467500499ED8 /* CodeSimilarityCheckerUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61891E55467500499ED8 /* CodeSimilarityCheckerUtil.cpp */; };
 		29BD61C51E55467500499ED8 /* NKASTTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29BD618B1E55467500499ED8 /* NKASTTree.cpp */; };
-		29BD61C61E55467500499ED8 /* NoUsedClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD618E1E55467500499ED8 /* NoUsedClass.m */; };
 		29BD61C71E55467500499ED8 /* NSString+RemoveEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61951E55467500499ED8 /* NSString+RemoveEmoji.m */; };
 		29BD61C81E55467500499ED8 /* XCKeyBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61971E55467500499ED8 /* XCKeyBuilder.m */; };
 		29BD61C91E55467500499ED8 /* XCAbstractDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD61991E55467500499ED8 /* XCAbstractDefinition.m */; };
@@ -55,8 +54,6 @@
 		29BD618A1E55467500499ED8 /* CodeSimilarityCheckerUtil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CodeSimilarityCheckerUtil.hpp; sourceTree = "<group>"; };
 		29BD618B1E55467500499ED8 /* NKASTTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NKASTTree.cpp; sourceTree = "<group>"; };
 		29BD618C1E55467500499ED8 /* NKASTTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NKASTTree.hpp; sourceTree = "<group>"; };
-		29BD618D1E55467500499ED8 /* NoUsedClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoUsedClass.h; sourceTree = "<group>"; };
-		29BD618E1E55467500499ED8 /* NoUsedClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoUsedClass.m; sourceTree = "<group>"; };
 		29BD61941E55467500499ED8 /* NSString+RemoveEmoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RemoveEmoji.h"; sourceTree = "<group>"; };
 		29BD61951E55467500499ED8 /* NSString+RemoveEmoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RemoveEmoji.m"; sourceTree = "<group>"; };
 		29BD61961E55467500499ED8 /* XCKeyBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCKeyBuilder.h; sourceTree = "<group>"; };
@@ -142,8 +139,6 @@
 				29BD618A1E55467500499ED8 /* CodeSimilarityCheckerUtil.hpp */,
 				29BD618B1E55467500499ED8 /* NKASTTree.cpp */,
 				29BD618C1E55467500499ED8 /* NKASTTree.hpp */,
-				29BD618D1E55467500499ED8 /* NoUsedClass.h */,
-				29BD618E1E55467500499ED8 /* NoUsedClass.m */,
 				29BD618F1E55467500499ED8 /* Vendor */,
 				29BD61C11E55467500499ED8 /* XcodeEditorCPPWrapper.h */,
 				29BD61C21E55467500499ED8 /* XcodeEditorCPPWrapper.mm */,
@@ -296,7 +291,6 @@
 				29BD61CC1E55467500499ED8 /* XCClassDefinition.m in Sources */,
 				29BD61C81E55467500499ED8 /* XCKeyBuilder.m in Sources */,
 				29BD61D71E55467500499ED8 /* XCSourceFileDefinition.m in Sources */,
-				29BD61C61E55467500499ED8 /* NoUsedClass.m in Sources */,
 				29BD61CD1E55467500499ED8 /* XCFileOperationQueue.m in Sources */,
 				29BD61D31E55467500499ED8 /* XCProject+SubProject.m in Sources */,
 				29BD61DC1E55467500499ED8 /* XcodeEditorCPPWrapper.mm in Sources */,

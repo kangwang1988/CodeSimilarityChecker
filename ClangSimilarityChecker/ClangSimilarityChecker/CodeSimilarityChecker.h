@@ -13,6 +13,10 @@
 #include<sstream>
 #include<typeinfo>
 #include<string>
+#include<regex>
+#include <string>
+#include <fstream>
+#include <sys/stat.h>
 
 #include "clang/Driver/Options.h"
 #include "clang/AST/AST.h"
@@ -31,7 +35,7 @@
 #include "clang/Frontend/CompilerInstance.h"
 #include "clang/AST/RecursiveASTVisitor.h"
 
-#include "NKASTTree.hpp"
+class NKASTTree;
 
 using namespace std;
 using namespace clang;
